@@ -1,8 +1,6 @@
 import React from "react"
 
-import Deck from "./components/deck";
-import Card from "./components/card";
-import Table from "./components/table";
+import {Deck, Card, Table, Hand, Outcome} from "./components";
 
 export default App = React.createClass({
   getinitialstate:function(){return Deck},
@@ -22,5 +20,7 @@ export default App = React.createClass({
         <Table deck={this.shuffleDeck(this.state.deck)}/>
     );
   }
+
+  
 });
 

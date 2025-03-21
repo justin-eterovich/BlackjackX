@@ -1,6 +1,6 @@
 import React from "react"
 
-import {Deck, Card, Table, Hand, Outcome} from "./components";
+import {Deck, Card, Table, Hand, Outcome, Interface} from "./components";
 
 export default App = React.createClass({
   getinitialstate:function(){return Deck},

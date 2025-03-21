@@ -1,8 +1,11 @@
 import React from "react"
-import deck from "./components/deck";
+
+import Deck from "./components/deck";
+import Card from "./components/card";
+import Table from "./components/table";
 
 export default App = React.createClass({
-  getinitialstate:function(){return deck},
+  getinitialstate:function(){return Deck},
 
   shuffleDeck : function(deck){
     var shuffledDeck = {}
@@ -13,4 +16,11 @@ export default App = React.createClass({
     }
     return shuffledDeck;
   },
-})
+
+  render: function() {
+    return (
+        <Table deck={this.shuffleDeck(this.state.deck)}/>
+    );
+  }
+});
+
